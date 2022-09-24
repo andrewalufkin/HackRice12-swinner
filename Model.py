@@ -16,19 +16,18 @@ class Model():
 
         print("Before:")
 
-        self.print_table(connection, "users")
-        self.print_table(connection, "user_ingredients")
+        self.print_table(connection, "recipes")
+        self.print_table(connection, "recipes_ingredients")
 
         print("_______________________________")
 
         print("After:")
 
-        self.add_user(connection, "user1", "password", ["cuisine_name_3"], ["ingredient_name", "ingredient_name_2"], 0, 0)
-        self.add_user(connection, "user2", "password", ["cuisine_name"], ["ingredient_name_2", "ingredient_name_3"], 0, 0)
+        self.add_recipe(connection, 5.0, 10, "cuisine_name", ["ingredient_name", "ingredient_name_2"])
 
 
-        self.print_table(connection, "users")
-        self.print_table(connection, "user_ingredients")
+        self.print_table(connection, "recipes")
+        self.print_table(connection, "recipes_ingredients")
 
 
     def create_connection(self, path):
@@ -107,9 +106,8 @@ class Model():
     #Represent each recipe by maintaining the time and cuisine type of each recipe.
     create_recipes_table = """CREATE TABLE IF NOT EXISTS recipes (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
-        rating INTEGER, 
+        rating DOUBLE, 
         time INTEGER,
-        cost INTEGER,
         cuisine TEXT NOT NULL
     );"""
 
@@ -156,6 +154,7 @@ class Model():
         VALUES
             (?, ?, ?)
         """
+        #Note: one question mark is required for each cuisine in cuisine list.
 
         args = [0 for x in range(len(self.cuisine_list))]
             
@@ -172,6 +171,7 @@ class Model():
         VALUES
             (?, ?, ?)
         """
+        #Note: one question mark is required for each ingredient in ingredient list.
 
         args = [0 for x in range(len(self.ingredient_list))]
 
@@ -232,6 +232,35 @@ class Model():
                 print(user)
         except Error as e:
             print("The error " + str(e) + " occurred.")
+    
+    def add_recipe(self, connection, rating, time, cuisine, ingredients):
+        
+        insert_recipe = """
+        INSERT INTO
+            'recipes' ('rating', 'time', 'cuisine')
+        VALUES
+            (?, ?, ?)
+        """
+        
+        args = (rating, time, cuisine)
+
+        self.execute_query(connection, [insert_recipe, args])
+
+        add_ingredients = """
+        INSERT INTO
+            'recipes_ingredients'
+        VALUES
+            (?, ?, ?)
+        """
+        #Note: one question mark is required for each ingredient in ingredient list.
+
+        args = [0 for x in range(len(self.ingredient_list))]
+
+        for ingredient_index in range(len(self.ingredient_list)):
+            if(self.ingredient_list[ingredient_index] in ingredients):
+                args[ingredient_index] = 1
+        
+        self.execute_query(connection, [add_ingredients, tuple(args)])
 
 
 model = Model()
