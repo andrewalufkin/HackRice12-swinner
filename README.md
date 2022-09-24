@@ -48,13 +48,13 @@
 
 <div align="left">
   <a href="https://github.com/andrewalufkin/HackRice12-swinner">
-    <img src="michael-khalfin.png" alt="Logo" width="200" height="301">
+    <img src="Andrew-Adams.png" alt="Logo" width="200" height="300">
   </a>
 
   <h3 align="left">Andrew Adams</h3>
 
   <p align="left">
-    Andrew is a junior studying Computer Science at Rice University. he was born and raised in Texas. He is passionate about ... When not working, he enjoys playing Super Smash Bros, reading everything and anything, and spending time with friends.
+    Andrew is a junior studying Computer Science at Rice University. he was born and raised in Texas. He is passionate about working together with people to solve complicated problems. When not working, he enjoys playing Super Smash Bros, reading everything and anything, and spending time with friends.
   </p>
 </div>
 
@@ -76,13 +76,13 @@
   
 <div align="left">
   <a href="https://github.com/andrewalufkin/HackRice12-swinner">
-    <img src="Teon-Golden.png" alt="Logo" width="200" height="267">
+    <img src="Ananya-Rao.png" alt="Logo" width="200" height="264">
   </a>
 
   <h3 align="left">Ananya Rao</h3>
 
   <p align="left">
-    Ananya is a freshman studying Computer Science at Rice University. She was born and raised in ... She is passionate about ... When not working, she enjoys ...
+    Ananya is a freshman studying Computer Science at Rice University. She was born in Virginia and raised in Texas. She is passionate about using technology to improve healthcare. When not working, she enjoys going on long runs, reading trashy romance books, and hanging out with friends.
   </p>
 </div>
 
