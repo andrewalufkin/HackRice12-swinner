@@ -24,8 +24,8 @@
   <summary>Table of Contents</summary>
   <ol>
     <li><a href="#team">Team</a></li>
-    <li><a href="#about-the-project">About The Project</a></li>
     <li><a href="#our-vision">Our Vision</a></li>
+    <li><a href="#about-the-project">About The Project</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
@@ -54,7 +54,7 @@
   <h3 align="left">Andrew Adams</h3>
 
   <p align="left">
-    Andrew is a junior studying Computer Science at Rice University. he was born and raised in Texas. He is passionate about working together with people to solve complicated problems. When not working, he enjoys playing Super Smash Bros, reading everything and anything, and spending time with friends.
+    Andrew is a junior studying Computer Science at Rice University. He was born and raised in Texas. He is passionate about working together with people to solve complicated problems. When not working, he enjoys playing Super Smash Bros, reading everything and anything, and spending time with friends. Learn more about Andrew on his <a href="https://www.linkedin.com/in/andrew-adams-425823246/">LinkedIn</a>.
   </p>
 </div>
 
@@ -68,7 +68,7 @@
   <h3 align="left">Teon Golden</h3>
 
   <p align="left">
-    Teon is a freshman studying Computer Science at Rice University. he was born and raised in Texas. He is passionate about artifical general intelligence and its implications. When not working, he enjoys reading novels, watching documentaries, and eating icecream.
+    Teon is a freshman studying Computer Science at Rice University. he was born and raised in Texas. He is passionate about artifical general intelligence and its implications. When not working, he enjoys reading novels, watching documentaries, and eating icecream. Learn more about Teon on his <a href="https://www.linkedin.com/in/teon-golden-48a93b239">LinkedIn</a>.
   </p>
 </div>
 
@@ -82,8 +82,24 @@
   <h3 align="left">Ananya Rao</h3>
 
   <p align="left">
-    Ananya is a freshman studying Computer Science at Rice University. She was born in Virginia and raised in Texas. She is passionate about using technology to improve healthcare. When not working, she enjoys going on long runs, reading trashy romance books, and hanging out with friends.
+    Ananya is a freshman studying Computer Science at Rice University. She was born in Virginia and raised in Texas. She is passionate about using technology to improve healthcare. When not working, she enjoys going on long runs, reading trashy romance books, and hanging out with friends. Learn more about Ananya on her <a href="https://www.linkedin.com/in/ananya-rao-281821246/">LinkedIn</a>.
   </p>
+</div>
+
+<!-- OUR VISION -->
+## Our Vision
+<div align="left">
+  <p align="left">
+    We developed Swinner for the First Timers Track during HACKRICE 12. We focused on creating robust algorithms and good UI / UX during our time hacking. In the future, machine learning can improve the user experience tenfold, bringing them closer and closer to the perfect dinner. We hope you are as excited about our product as we are!
+  </p>
+</div>
+
+<br />
+
+<div align="center">
+  <a href="https://github.com/andrewalufkin/HackRice12-swinner">
+    <img src="Why-Swinner.png" alt="Logo" width="600" height="277">
+  </a>
 </div>
 
 <!-- ABOUT THE PROJECT -->
@@ -100,7 +116,7 @@
     Fact: Meal planning should be <strong>AUTOMATED</strong>.
   </p>
   <p align="left">
-    Enter Swinners, an Android app to make meal planning easier than ever. After downloading the app and creating a free account, users are greeted with some preliminary questions:
+    Enter Swinner, an Android app to make meal planning easier than ever. After downloading the app and creating a free account, users are greeted with some preliminary questions:
     <ol>
       <li>What is your planned budget per meal?</li>
       <li>Do you have any dietary restrictions and/or allergies?</li>
@@ -111,14 +127,6 @@
   </p>
   <p align="left">
     Winner, winner, chicken, swinner.
-  </p>
-</div>
-
-<!-- OUR VISION -->
-## Our Vision
-<div align="left">
-  <p align="left">
-    We developed Swinner for the First Timers Track during HACKRICE 12. We focused on creating robust algorithms and good UI / UX during our time hacking. In the future, machine learning can improve the user experience tenfold, bringing them closer and closer to the perfect dinner. We hope you are as excited about our product as we are!
   </p>
 </div>
 
