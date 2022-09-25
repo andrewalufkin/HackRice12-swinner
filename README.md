@@ -1,6 +1,6 @@
 <br />
 <div align="center">
-  <a href="https://github.com/andrewalufkin/HackRice12-swinner">
+  <a href="https://github.com/andrewalufkin/HackRice12-swinner/tree/main/images">
     <img src="logo.png" alt="Logo" width="400" height="400">
   </a>
 
@@ -33,7 +33,7 @@
 <!-- TEAM -->
 ## Team
 <div align="left">
-  <a href="https://github.com/andrewalufkin/HackRice12-swinner">
+  <a href="https://github.com/andrewalufkin/HackRice12-swinner/images">
     <img src="michael-khalfin.png" alt="Logo" width="200" height="301">
   </a>
 
