@@ -1,33 +1,14 @@
 from os import curdir
 import sqlite3
 from sqlite3 import Error
+from recipebook.sites.allrecipes import AllRecipes
 
 class Model():
 
     def __init__(self):
-        connection = self.create_connection("E:\\sm_app.sqlite")
-
-        cursor = connection.cursor()
-
-        self.drop_tables(connection)
-        self.initiate_tables(connection)
-
-        
-
-        print("Before:")
-
-        self.print_table(connection, "recipes")
-        self.print_table(connection, "recipes_ingredients")
-
-        print("_______________________________")
-
-        print("After:")
-
-        self.add_recipe(connection, 5.0, 10, "cuisine_name", ["ingredient_name", "ingredient_name_2"])
-
-
-        self.print_table(connection, "recipes")
-        self.print_table(connection, "recipes_ingredients")
+        recipe = AllRecipes("https://www.allrecipes.com/recipe/7004/raisin-brown-bread/")
+        print("Image URL:")
+        print(recipe.getImage)
 
 
     def create_connection(self, path):
@@ -35,7 +16,6 @@ class Model():
 
         try:
             connection = sqlite3.connect(path)
-            print("Connection successful.")
         except Error as e:
             print("Error " + e + " with connecting to path.")
 
@@ -48,14 +28,13 @@ class Model():
             try:
                 cursor.execute(query[0])
                 connection.commit()
-                print("Query executed.")
+
             except Error as e:
                 print("Error " + str(e) + " occurred when executing query.")
         else:
             try:
                 cursor.execute(query[0], query[1])
                 connection.commit()
-                print("Query executed.")
             except Error as e:
                 print("Error " + str(e) + " occurred when executing query.")
 
@@ -116,7 +95,8 @@ class Model():
     recipes_ingredients_table = """CREATE TABLE IF NOT EXISTS recipes_ingredients (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
         ingredient_name TEXT NOT NULL,
-        quantity INTEGER NOT NULL
+        ingredient_name_2 TEXT NOT NULL,
+        ingredient_nume_3 TEXT NOT NULL,
     );"""
 
     cuisine_list = ["cuisine_name", "cuisine_name_2", "cuisine_name_3"]
