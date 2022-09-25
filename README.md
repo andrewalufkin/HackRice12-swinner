@@ -1,7 +1,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/andrewalufkin/HackRice12-swinner/tree/main/images">
-    <img src="logo.png" alt="Logo" width="400" height="400">
+    <img src="https://github.com/andrewalufkin/HackRice12-swinner/blob/main/images/logo.png" alt="Logo" width="400" height="400">
   </a>
 
   <br/>
@@ -33,8 +33,8 @@
 <!-- TEAM -->
 ## Team
 <div align="left">
-  <a href="https://github.com/andrewalufkin/HackRice12-swinner/images">
-    <img src="michael-khalfin.png" alt="Logo" width="200" height="301">
+  <a href="https://github.com/andrewalufkin/HackRice12-swinner/blob/main/images">
+    <img src="https://github.com/andrewalufkin/HackRice12-swinner/blob/main/images/michael-khalfin.png" alt="Logo" width="200" height="301">
   </a>
 
   <h3 align="left">Michael Khalfin</h3>
@@ -48,7 +48,7 @@
 
 <div align="left">
   <a href="https://github.com/andrewalufkin/HackRice12-swinner">
-    <img src="Andrew-Adams.png" alt="Logo" width="200" height="300">
+    <img src="https://github.com/andrewalufkin/HackRice12-swinner/blob/main/images/Andrew-Adams.png" alt="Logo" width="200" height="300">
   </a>
 
   <h3 align="left">Andrew Adams</h3>
@@ -62,7 +62,7 @@
 
 <div align="left">
   <a href="https://github.com/andrewalufkin/HackRice12-swinner">
-    <img src="Teon-Golden.png" alt="Logo" width="200" height="267">
+    <img src="https://github.com/andrewalufkin/HackRice12-swinner/blob/main/images/Teon-Golden.png" alt="Logo" width="200" height="267">
   </a>
 
   <h3 align="left">Teon Golden</h3>
@@ -76,7 +76,7 @@
 
 <div align="left">
   <a href="https://github.com/andrewalufkin/HackRice12-swinner">
-    <img src="Ananya-Rao.png" alt="Logo" width="200" height="264">
+    <img src="https://github.com/andrewalufkin/HackRice12-swinner/blob/main/images/Ananya-Rao.png" alt="Logo" width="200" height="264">
   </a>
 
   <h3 align="left">Ananya Rao</h3>
@@ -98,7 +98,7 @@
 
 <div align="center">
   <a href="https://github.com/andrewalufkin/HackRice12-swinner">
-    <img src="Why-Swinner.png" alt="Logo" width="600" height="277">
+    <img src="https://github.com/andrewalufkin/HackRice12-swinner/blob/main/images/Why-Swinner.png" alt="Logo" width="600" height="277">
   </a>
 </div>
 
