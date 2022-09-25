@@ -1,4 +1,0 @@
-import Model
-
-m = Model()
-
