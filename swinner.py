@@ -17,15 +17,19 @@ from kivy.lang import Builder
 from kivy.clock import Clock
 from kivy.uix.behaviors import ButtonBehavior
 
-favorite_meals = []
-
 class ImageButton(ButtonBehavior, AsyncImage):
     pass
 
 class WindowCheckout(Screen):
     pass
 
-class WindowMain(Screen):
+class WindowMain1(Screen):
+    pass
+
+class WindowMain2(Screen):
+    pass
+
+class WindowMain3(Screen):
     pass
 
 class WindowFavorites(Screen):
@@ -83,14 +87,18 @@ class SwinnerCheckout(BoxLayout):
         self.add_widget(zip_label)
         self.add_widget(confirm_button)
 
+
+
 class SwinnerMain(BoxLayout):
     def __init__(self, **kwargs):
         super(SwinnerMain, self).__init__(**kwargs)
-        meal_label = Label(text="Hot Dog")
+
+        #meal_label = Label(text="Hot Dog")
+        
+        #wimg = AsyncImage(source='https://github.com/andrewalufkin/HackRice12-swinner/blob/main/images/Andrew-Adams.png?raw=true')
         #wimg = AsyncImage(source='michael-khalfin.png')
-        wimg = AsyncImage(source='https://github.com/andrewalufkin/HackRice12-swinner/blob/main/images/Andrew-Adams.png?raw=true')
-        self.add_widget(meal_label)
-        self.add_widget(wimg)
+        #self.add_widget(meal_label)
+        #self.add_widget(wimg)
         swipe_buttons = SwinnerSwipe()
         
         
@@ -99,10 +107,11 @@ class SwinnerMain(BoxLayout):
 class SwinnerSwipe(BoxLayout):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
-        lb = Button(text="L")
-        rb = Button(text="R")
-        self.add_widget(lb)
-        self.add_widget(rb)
+        #lb = Button(text="L")
+        #rb = Button(text="R")
+        #rb.bind(on_press=favorite_meals.append(meal_label))
+        #self.add_widget(lb)
+        #self.add_widget(rb)
 
 class SwinnerFavoritesScroll(ScrollView):
     pass
@@ -135,9 +144,16 @@ class SwinnerOptions(GridLayout):
         self.add_widget(delete_label)
         self.add_widget(meal_label)
         self.add_widget(add_label)
+        
+        meal_labels = ["1-2-3 Cherry Poke Cake", "1-2-3 Jambalaya", "1-2-3 Lemon Icebox Pie",
+                       "1-Dish Chicken Parmesan", "1-Dish Taco Bake", "1-Pumpkin Spice Cookies",
+                       "10-Pound Cheesecake", "100 Whole Wheat Pancakes", "11-Can Chili",
+                       "120-Calorie Peach Pies"]
         for i in range(10):
             c1 = ToggleButton(size_hint=(0.33,0.1), group=str(i))
-            drop_provision = Label(text="Recipe", size_hint=(0.33,0.1))
+            #drop_provision = Label(text="Recipe", size_hint=(0.33,0.1))
+            drop_provision = Label(text=meal_labels[i], size_hint=(0.33,0.1))
+            #Image
         #     for i in range(3):
         #         btn = Button(text="Pepper", size_hint=(0.33,0.1), height=60)
         #         btn.bind(on_release=lambda btn: drop_provision.select(btn.text))

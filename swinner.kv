@@ -6,7 +6,10 @@ WindowManager:
     WindowLoading3:
     WindowSurvey:
     WindowFirstTime:
-    WindowMain:
+    #WindowMain:
+    WindowMain1:
+    WindowMain2:
+    WindowMain3:
     WindowFavorites:
     WindowCheckout:
     
@@ -82,15 +85,92 @@ WindowManager:
         Button:
             size_hint: 1, .1
             text: "Begin Swiping"
-            on_press: app.root.current = "main"
+            on_press: app.root.current = "main1"
     
-<WindowMain>:
-    name: "main"
+#<WindowMain>:
+#    name: "main"
+#    
+#    BoxLayout:
+#        orientation: "vertical"
+#        size: root.width, root.height
+#        SwinnerMain:
+#        Button: 
+#            size_hint: 1, .1
+#            text: "Go to favorites!"
+#            on_press: app.root.current = "favorites"
+
+<WindowMain1>:
+    name: "main1"
     
     BoxLayout:
         orientation: "vertical"
         size: root.width, root.height
+        Label:
+            text: "1-2-3 Jambalaya"
+            size_hint: 1, .2
+        Image:
+            source: "1-2-3 Jambalaya.webp"
+            allow_stretch: True
+            keep_ratio: False
         SwinnerMain:
+            BoxLayout:
+                orientation: "horizontal"
+                Button:
+                    text: "L"
+                Button:
+                    text: "R"
+                    on_press: app.root.current = "main2"
+        Button: 
+            size_hint: 1, .1
+            text: "Go to favorites!"
+            on_press: app.root.current = "favorites"
+            
+<WindowMain2>:
+    name: "main2"
+    
+    BoxLayout:
+        orientation: "vertical"
+        size: root.width, root.height
+        Label:
+            text: "1-2-3 Lemon IceBox Pie.webp"
+            size_hint: 1, .2
+        Image:
+            source: "1-2-3 Lemon IceBox Pie.webp"
+            allow_stretch: True
+            keep_ratio: False
+        SwinnerMain:
+        BoxLayout:
+            orientation: "horizontal"
+            Button:
+                text: "L"
+            Button:
+                text: "R"
+                on_press: app.root.current = "main3"
+        Button: 
+            size_hint: 1, .1
+            text: "Go to favorites!"
+            on_press: app.root.current = "favorites"
+
+<WindowMain3>:
+    name: "main3"
+    
+    BoxLayout:
+        orientation: "vertical"
+        size: root.width, root.height
+        Label:
+            text: "100% Whole Wheat Pancakes"
+            size_hint: 1, .2
+        Image:
+            source: "Pancakes.webp"
+            allow_stretch: True
+            keep_ratio: False
+        SwinnerMain:
+        BoxLayout:
+            orientation: "horizontal"
+            Button:
+                text: "L"
+            Button:
+                text: "R"
         Button: 
             size_hint: 1, .1
             text: "Go to favorites!"
